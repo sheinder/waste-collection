@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Waste Collection</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header id="site-header"></header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="container hero-grid">
+      <div class="hero">
+        <div class="hero-text">
+          <small id="welcome">Welcome to Waste Collection</small>
+          <h1>Smarter Waste Collection for Sustainable Communities</h1>
+          <p>Manage your waste pickup requests easily and help build a cleaner, more sustainable community.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary open-modal">Request Waste Pickup</button>
+            <a href="#how" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+        <!-- Ganti dengan foto: letakkan di images/hero.jpg lalu atur di style.css (.hero-img) -->
+        <div class="hero-img" role="img" aria-label="Ilustrasi pengelolaan sampah"></div>
+      </div>
+
+      <aside class="sdg">
+        <div class="sdg-icon">🏙</div>
+        <h3>SDG 11<br />Sustainable Cities and Communities</h3>
+        <p>Building inclusive, safe, resilient and sustainable cities for all.</p>
+        <img class="sdg-img" src="images/sdg.jpg" alt="" />
+        <a href="#about">Learn More →</a>
+      </aside>
+    </section>
+
+    <!-- SERVICES (dibuat dari array di script.js) -->
+    <section id="services" class="container">
+      <div id="serviceList" class="cards"></div>
+    </section>
+
+    <!-- HOW IT WORKS + SUPPORTING -->
+    <section id="how" class="container how-grid">
+      <div>
+        <h2>How It Works</h2>
+        <p class="muted">A simple process to make waste collection easier and more organized.</p>
+        <ol id="stepList" class="steps"></ol>
+      </div>
+      <aside id="about" class="support">
+        <h3>Supporting Sustainable Cities</h3>
+        <p>This system supports sustainable communities by making waste collection more organized, efficient, and easier to monitor.</p>
+        <a href="#types" class="btn btn-outline">Learn More</a>
+      </aside>
+    </section>
+
+    <!-- WASTE TYPES -->
+    <section id="types" class="container">
+      <h2>Waste Types</h2>
+      <ul id="typeList" class="chips"></ul>
+    </section>
+
+    <!-- CTA -->
+    <section class="container">
+      <div class="cta">
+        <div>
+          <h3>Ready to Make Waste Collection Easier?</h3>
+          <p class="muted">Submit your waste pickup request and contribute to a cleaner community.</p>
+        </div>
+        <button class="btn btn-primary open-modal">Request Pickup</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+
+  <script src="layout.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.login-wrap { display: grid; place-items: center; min-height: 80vh; padding: 20px; background: var(--green-soft); }
+.login-card { background: #fff; padding: 28px; border-radius: 18px; width: min(380px, 100%); display: grid; gap: 12px; border: 1px solid var(--border); }
+.hint { font-size: 12px; color: var(--muted); background: var(--green-soft); padding: 10px; border-radius: 10px; }
+.err { color: #b3261e; font-size: 13px; min-height: 18px; }
+
+.app { display: grid; grid-template-columns: 220px 1fr; gap: 24px; align-items: start; padding-top: 24px; }
+.side { display: grid; gap: 6px; position: sticky; top: 80px; }
+.side button { text-align: left; padding: 10px 14px; border: 0; border-radius: 10px; background: transparent; font: inherit; font-size: 14px; cursor: pointer; }
+.side button:hover { background: var(--green-soft); }
+.side button.active { background: var(--green); color: #fff; font-weight: 600; }
+.content { min-width: 0; display: grid; gap: 14px; }
+.content h3 { font-size: 20px; }
+
+.form { display: grid; gap: 12px; max-width: 420px; }
+.inline { display: flex; gap: 8px; flex-wrap: wrap; align-items: end; }
+label { display: grid; gap: 4px; font-size: 13px; font-weight: 600; }
+input, select, textarea { padding: 10px; border: 1px solid var(--border); border-radius: 10px; font: inherit; }
+.panel { background: var(--green-soft); border-radius: 14px; padding: 16px; display: grid; gap: 8px; }
+
+.tw { overflow-x: auto; border: 1px solid var(--border); border-radius: 12px; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
+th { background: var(--green-soft); }
+td input { width: 80px; padding: 6px; }
+.empty { text-align: center; color: var(--muted); }
+.btn-sm { padding: 5px 12px; font-size: 12px; margin-right: 4px; }
+.badge { padding: 3px 10px; border-radius: 999px; font-size: 12px; background: #eee; }
+.badge.Pending { background: #fff1d6; }
+.badge.Approved { background: #d9ecff; }
+.badge.Collected { background: #d4f0df; }
+.badge.Rejected { background: #fadcd9; }
+.msg { color: var(--green); font-size: 13px; min-height: 18px; }
+
+@media (max-width: 800px) {
+  .app { grid-template-columns: 1fr; }
+  .side { position: static; grid-auto-flow: column; overflow-x: auto; }
+  .side button { white-space: nowrap; }
+}
+
+.chk { display: flex; align-items: center; gap: 8px; font-weight: 400; }
+.chk input { width: auto; }

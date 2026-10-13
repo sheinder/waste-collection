@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard - Waste Collection</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body data-page="dash">
+  <header class="navbar">
+    <a href="index.html" class="brand"><span class="logo">♻</span> Waste Collection</a>
+    <div class="nav-right">
+      <span class="user"><span class="avatar" id="av"></span><span id="who"></span></span>
+      <button class="btn btn-outline" data-act="logout">Logout</button>
+    </div>
+  </header>
+  <div class="app container">
+    <nav id="side" class="side" aria-label="Menu dashboard"></nav>
+    <main id="content" class="content"></main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

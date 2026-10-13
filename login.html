@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - Waste Collection</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body data-page="login">
+  <header class="navbar">
+    <a href="index.html" class="brand"><span class="logo">♻</span> Waste Collection</a>
+    <a href="index.html" class="btn btn-outline">Kembali ke Home</a>
+  </header>
+  <main class="login-wrap">
+    <form id="loginForm" class="login-card">
+      <h2>Login</h2>
+      <p class="muted">Masuk sebagai Customer atau Admin.</p>
+      <label>Username <input id="user" autocomplete="username" required /></label>
+      <label>Password <input id="pass" type="password" autocomplete="current-password" required /></label>
+      <p id="err" class="err" role="alert"></p>
+      <button class="btn btn-primary">Login</button>
+      <p class="hint">Akun demo:<br>Customer: <b>john</b> / <b>john123</b><br>Admin: <b>admin</b> / <b>admin123</b></p>
+    </form>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
