@@ -32,9 +32,9 @@ const types = [
   { icon: "🛋", name: "Bulky Waste", c: "p", desc: "Furniture, large appliances, and oversized items that need a scheduled, dedicated pickup.", tags: ["Oversized", "By request"] },
 ];
 const team = [
-  { name: "Bryant Miroslavy Limoel", photo: "images/bryant.jpg" },
-  { name: "Celsea Lorencia", photo: "images/celsea.jpg" },
-  { name: "Poretto Aurelia Chandra", photo: "images/poretto.jpg" },
+  { name: "Bryant Miroslavy Limoel", photo: "bryant.jpg" },
+  { name: "Celsea Lorencia", photo: "celsea.jpg" },
+  { name: "Poretto Aurelia Chandra", photo: "poretto.jpg" },
 ];
 
 fill("serviceList", services.map(s => `<article class="card"><div class="icon">${s.icon}</div><h4>${s.title}</h4><p>${s.desc}</p></article>`).join(""));
